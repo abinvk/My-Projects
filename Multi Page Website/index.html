@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Page Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <nav>
+    <h1>My Website</h1>
+
+    <ul>
+      <li><button onclick="showPage('home')">Home</button></li>
+      <li><button onclick="showPage('about')">About</button></li>
+      <li><button onclick="showPage('services')">Services</button></li>
+      <li><button onclick="showPage('gallery')">Gallery</button></li>
+      <li><button onclick="showPage('contact')">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- Pages -->
+
+  <div id="home" class="page active">
+    <h1>Home Page</h1>
+    <p>Welcome to our website</p>
+  </div>
+
+  <div id="about" class="page">
+    <h1>About Page</h1>
+    <p>We are web developers</p>
+  </div>
+
+  <div id="services" class="page">
+    <h1>Services Page</h1>
+    <p>Web Design, App Development</p>
+  </div>
+
+  <div id="gallery" class="page">
+    <h1>Gallery Page</h1>
+
+    <div class="gallery-box">
+      <div class="box">Image 1</div>
+      <div class="box">Image 2</div>
+      <div class="box">Image 3</div>
+    </div>
+  </div>
+
+  <div id="contact" class="page">
+    <h1>Contact Page</h1>
+
+    <form>
+      <input type="text" placeholder="Enter Name">
+      <input type="email" placeholder="Enter Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
